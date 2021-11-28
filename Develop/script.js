@@ -12,7 +12,7 @@ const generateBtn = document.querySelector("#generate");
 // Generate password function, prompt user
 function generatePassword() {
   // character length user prompt
-  lengthPass = window.prompt("How many characters should your password be? (Should be between 8 and 128 characters)")
+  lengthPass = parseInt(window.prompt("How many characters should your password be? (Should be between 8 and 128 characters)"));
 
   //check if entry was a number
   if (Number.isNaN(lengthPass)) {
